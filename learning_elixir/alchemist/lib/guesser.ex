@@ -5,14 +5,11 @@ defmodule Guesser do
     response = IO.gets("Are you thinking of #{mid(low, high)}?  ")
 
     case initial(response) do
-      "y" ->
-        IO.puts("Got it!")
+      "y" -> IO.puts("Got it!")
 
-      "b" ->
-        bigger(low, high)
+      "b" -> bigger(low, high)
 
-      "s" ->
-        smaller(low, high)
+      "s" -> smaller(low, high)
 
       _ ->
         IO.puts("Valid responses are 'smaller', 'bigger', or 'yes'.\n")
