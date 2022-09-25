@@ -2,5 +2,5 @@ IO.gets("Filename:  ")
 |> String.trim
 |> File.read!
 |> String.split
-|> Enum.count
+|> length
 |> IO.puts
