@@ -1,7 +1,6 @@
 defmodule Guesser do
   def guess(a, b) when a > b, do: guess(b, a)
 
-
   def guess(low, high) do
     response = IO.gets("Are you thinking of #{mid(low, high)}?  ")
 
